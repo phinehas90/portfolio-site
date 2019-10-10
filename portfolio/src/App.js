@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hi! I'm Corey, I build software and web-sites and I'm looking for somebody to pay me for services rendered.
+          Hi! I'm Corey. I build software and web-sites and I'm looking for somebody to pay me for services rendered.
         </a>
       </header>
     </div>

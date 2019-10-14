@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import LandingPage from "./LandingPage"
+import ActualLandingPage from './ActualLandingPage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hi! I'm Corey. I build software and web-sites and I'm looking for somebody to pay me for services rendered.
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <LandingPage/>
+        </Route>
+        <Route path="/about">
+          <ActualLandingPage/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
